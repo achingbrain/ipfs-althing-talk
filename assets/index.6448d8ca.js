@@ -694,7 +694,7 @@ Type \`help\` for help
 
 * ~8600 \`ipfs-core\` downloads per week (up from ~4500 12 months ago)
 
-<img src="./slides/growth.png" alt="js-ipfs growth" height="400" />
+<img src="https://raw.githubusercontent.com/achingbrain/ipfs-althing-talk/master/public/slides/growth.png" alt="js-ipfs growth" height="400" />
 
 * People using js-IPFS or parts of it in their stacks:
   * OrbitDB
