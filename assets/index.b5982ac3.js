@@ -761,6 +761,7 @@ Type \`help\` for help
 
 * People using js-IPFS or parts of it in their stacks:
   * tbd
+  * elastic IPFS
   * OrbitDB
   * 3Box
   * Anchor
