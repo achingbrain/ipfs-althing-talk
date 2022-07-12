@@ -13,7 +13,7 @@ import slide5 from './slides/5.md?raw'
 import slide6 from './slides/6.md?raw'
 import slide7 from './slides/7.md?raw'
 import slide8 from './slides/8.md?raw'
-import slide8 from './slides/9.md?raw'
+import slide9 from './slides/9.md?raw'
 
 createTerminal(document.getElementById('terminal'), {
   welcome: `<pre>
