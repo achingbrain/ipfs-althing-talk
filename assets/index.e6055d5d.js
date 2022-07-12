@@ -633,17 +633,19 @@ Type \`help\` for help
   * Mobile
 * Meet the developers where they are
   * [12.4m JS devs](https://www.developernation.net/blog/infographic-programming-languages-adoption-trends-2020) in the world
-  * 53% of all developers use JS at some point`,Yh=`# Architecture
+  * 53% of all developers use JS at some point`,Yh=`# \u{1F3D7}\uFE0F Architecture
 
 > Boxes with lines drawn between them
 
-## History 101
+## \u{1F9D3} js-IPFS History
 
 * Started as a go-ipfs clone
 * Aiming for feature parity
   * Not a good fit!
+  * Not streamlined for individual use-cases
+  * Kitchen-sink style implementation
 
-## Where are we now?
+## \u{1F30E} Where are we now?
 
 * Evolved to be an ecosystem of modules
 * Library-first approach
@@ -651,8 +653,65 @@ Type \`help\` for help
   * unixfs
   * bitswap
   * libp2p
-* Components reused in nft.storage, and other stuff
-`,Qh=`# \u{1F627} Pain points
+* Pick & choose components
+`,Qh=`# \u{1F3ED} Architecture
+
+## \u{1F4A7} ipfs-core
+
+\`\`\`
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502                              \u2502
+\u2502    ipfs-core (add,cat,etc)   \u2502
+\u2502                              \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+               \u2502
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502                              \u2502
+\u2502            unixfs            \u2502
+\u2502                              \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+               \u2502
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502                              \u2502
+\u2502     multiformats (dag-pb)    \u2502
+\u2502                              \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+               \u2502
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502                              \u2502
+\u2502           bitswap            \u2502
+\u2502                              \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+       \u2502               \u2502
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2510 \u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502             \u2502 \u2502              \u2502
+\u2502   libp2p    \u2502 \u2502  blockstore  \u2502
+\u2502             \u2502 \u2502              \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+\`\`\``,Vh=`# \u{1F5FC} Architecture
+
+## \u{1F30A} ipfs vs \u{1F4A7} ipfs-core
+
+\`\`\`
+          \u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+          \u2502                                    \u2502
+          \u2502               ipfs                 \u2502
+          \u2502                                    \u2502
+          \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+                            \u2502
+          \u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+          \u2502                                    \u2502
+          \u2502             ipfs-cli               \u2502
+          \u2502                                    \u2502
+          \u2514\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2518
+              \u2502             \u2502               \u2502
+\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2510 \u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510 \u250C\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502                \u2502 \u2502                 \u2502 \u2502                \u2502
+\u2502    ipfs-core   \u2502 \u2502  ipfs-http-api  \u2502 \u2502  ipfs-daemon   \u2502
+\u2502                \u2502 \u2502                 \u2502 \u2502                \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+\`\`\`
+`,$h=`# \u{1F627} Pain points
 
 > What does js-ipfs not do well?
 
@@ -677,14 +736,15 @@ Type \`help\` for help
 * Web Crypto missing some essential algorithms
   * Ed25519 keys
   * Async everywhere - whyyyyyy
-`,Vh=`# \u26BD Team
+`,Xh=`# \u26BD Team
 
-* That'd be me \u{1F44B}
-  * Quick meetings \u2705
-  * Strong alignment \u{1F44D}
-  * We're hiring! \u{1F9D1}\u200D\u{1F4BC}
+## \u{1F44B} Oh hai!
 
-* Alumni
+* Quick meetings \u2705
+* Strong alignment \u{1F44D}
+* We're hiring! \u{1F9D1}\u200D\u{1F4BC}
+
+## \u{1F393} Alumni
   * Alan Shaw
   * David Dias
   * Hugo Dias
@@ -692,11 +752,11 @@ Type \`help\` for help
   * Jacob Heun
   * Vasco Santos
   * ..etc
-`,$h=`# \u{1F69C} Traction
+`,qh=`# \u{1F69C} Traction
 
 * ~8600 \`ipfs-core\` downloads per week (up from ~4500 12 months ago)
 
-<img src="https://raw.githubusercontent.com/achingbrain/ipfs-althing-talk/master/public/slides/growth.png" alt="js-ipfs growth" height="400" />
+<img src="https://raw.githubusercontent.com/achingbrain/ipfs-althing-talk/master/public/slides/growth.png" alt="js-ipfs growth" width="500" />
 
 * People using js-IPFS or parts of it in their stacks:
   * tbd
@@ -706,11 +766,18 @@ Type \`help\` for help
   * Berty
   * Block
   * nft.storage
-`,Xh=`# \u{1F6E3}\uFE0F Roadmap
+  * & more!
+`,Jh=`# \u{1F6E3}\uFE0F Roadmap
+
+## ipfs
 
 * ESM/TypeScript
 * Web-first
-* Smaller API
+* Smaller API (decoupled from Kubo / legacy JS "Core API")
+
+## libp2p
+
+* Routing delegation with Reframe
 * Better connectivity
   * WebTransport
   * WRTC-Direct
@@ -730,11 +797,14 @@ Type \`help\` for help
 * libp2p
 * multiformats
 * blockstore
-`,qh=`# Questions?
+`,Zh=`# \u{1F914} Questions?
+
+<img src="https://js.ipfs.io/static/cube-5a125bc68b1f819d3976b2f4a04cf821.svg" alt="js-ipfs logo" width="200" />
 
 * achingbrain <alex.potsides@protocol.ai>
 * https://github.com/ipfs/js-ipfs
-* https://js.ipfs.io`;js.exports.createTerminal(document.getElementById("terminal"),{welcome:`<pre>
+* https://js.ipfs.io
+`;js.exports.createTerminal(document.getElementById("terminal"),{welcome:`<pre>
    _           _        __
   (_)___      (_)_ __  / _|___
   | / __|_____| | '_ \\| |_/ __|
@@ -748,4 +818,4 @@ Type \`help\` for help
  \\ \\__,_| \\____/\\/   \\/     \\__/ | .__/|_|_| |_|\\__, |
   \\____/                         |_|            |___/
 </pre>
-<br/>`,theme:"interlaced",commands:{"/usr/local/bin/md":Kh},files:{"~/Documents/talks/js-ipfs-althing/0.md":{content:zh},"~/Documents/talks/js-ipfs-althing/1.md":{content:Wh},"~/Documents/talks/js-ipfs-althing/2.md":{content:Yh},"~/Documents/talks/js-ipfs-althing/3.md":{content:Qh},"~/Documents/talks/js-ipfs-althing/4.md":{content:Vh},"~/Documents/talks/js-ipfs-althing/5.md":{content:$h},"~/Documents/talks/js-ipfs-althing/6.md":{content:Xh},"~/Documents/talks/js-ipfs-althing/7.md":{content:qh}},history:"cli-history",user:"alex"});
+<br/>`,theme:"interlaced",commands:{"/usr/local/bin/md":Kh},files:{"~/Documents/talks/js-ipfs-althing/0.md":{content:zh},"~/Documents/talks/js-ipfs-althing/1.md":{content:Wh},"~/Documents/talks/js-ipfs-althing/2.md":{content:Yh},"~/Documents/talks/js-ipfs-althing/3.md":{content:Qh},"~/Documents/talks/js-ipfs-althing/4.md":{content:Vh},"~/Documents/talks/js-ipfs-althing/5.md":{content:$h},"~/Documents/talks/js-ipfs-althing/6.md":{content:Xh},"~/Documents/talks/js-ipfs-althing/7.md":{content:qh},"~/Documents/talks/js-ipfs-althing/8.md":{content:Jh},"~/Documents/talks/js-ipfs-althing/9.md":{content:Zh}},history:"cli-history",user:"alex"});
