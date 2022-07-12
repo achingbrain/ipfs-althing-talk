@@ -769,13 +769,13 @@ Type \`help\` for help
   * & more!
 `,Jh=`# \u{1F6E3}\uFE0F Roadmap
 
-## ipfs
+## \u2B22 ipfs
 
 * ESM/TypeScript
 * Web-first
 * Smaller API (decoupled from Kubo / legacy JS "Core API")
 
-## libp2p
+## \u{1F9EA} libp2p
 
 * Routing delegation with Reframe
 * Better connectivity
