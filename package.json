@@ -1,0 +1,24 @@
+{
+  "name": "ipfs-althing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rehype-raw": "^6.1.1",
+    "rehype-sanitize": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "terminatorator": "^1.0.0",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "vite": "^2.9.14"
+  }
+}
