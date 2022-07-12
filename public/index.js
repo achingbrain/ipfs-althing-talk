@@ -12,6 +12,8 @@ import slide4 from './slides/4.md?raw'
 import slide5 from './slides/5.md?raw'
 import slide6 from './slides/6.md?raw'
 import slide7 from './slides/7.md?raw'
+import slide8 from './slides/8.md?raw'
+import slide8 from './slides/9.md?raw'
 
 createTerminal(document.getElementById('terminal'), {
   welcome: `<pre>
@@ -59,6 +61,12 @@ createTerminal(document.getElementById('terminal'), {
     },
     '~/Documents/talks/js-ipfs-althing/7.md': {
       content: slide7
+    },
+    '~/Documents/talks/js-ipfs-althing/8.md': {
+      content: slide8
+    },
+    '~/Documents/talks/js-ipfs-althing/9.md': {
+      content: slide9
     }
   },
   history: 'cli-history', // the localStorage key used to store terminal history
