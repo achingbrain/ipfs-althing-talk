@@ -798,7 +798,7 @@ Type \`help\` for help
 * bitswap - https://www.npmjs.com/package/ipfs-bitswap
 * libp2p - https://www.npmjs.com/package/libp2p
 * blockstore - https://www.npmjs.com/package/interface-blockstore
-`,Zh=`# \u{1F914} Questions?
+`,Zh=`# \u{1F305} The end! (of the beginning)
 
 <img src="https://js.ipfs.io/static/cube-5a125bc68b1f819d3976b2f4a04cf821.svg" alt="js-ipfs logo" width="200" />
 
