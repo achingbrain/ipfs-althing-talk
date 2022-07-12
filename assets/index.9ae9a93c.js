@@ -625,7 +625,7 @@ Type \`help\` for help
 * https://js.ipfs.io
 `,Wh=`# \u{1F914} What's it for?
 
-* How do you run IPFS on every computer on the planet?
+* How do you run IPFS on (almost) every computer on the planet?
 * JavaScript!
   * Browsers
   * Servers
@@ -633,13 +633,14 @@ Type \`help\` for help
   * Mobile
 * Meet the developers where they are
   * [12.4m JS devs](https://www.developernation.net/blog/infographic-programming-languages-adoption-trends-2020) in the world
-  * 53% of all developers use JS at some point`,Yh=`# \u{1F3D7}\uFE0F Architecture
+  * 53% of all developers use JS at some point
+`,Yh=`# \u{1F3D7}\uFE0F Architecture
 
 > Boxes with lines drawn between them
 
 ## \u{1F9D3} js-IPFS History
 
-* Started as a go-ipfs clone
+* Started as a go-ipfs/kubo clone
 * Aiming for feature parity
   * Not a good fit!
   * Not streamlined for individual use-cases
@@ -773,7 +774,7 @@ Type \`help\` for help
 
 * ESM/TypeScript
 * Web-first
-* Smaller API (decoupled from Kubo / legacy JS "Core API")
+* Smaller API (decoupled from Kubo / JS "Core API")
 
 ## \u{1F9EA} libp2p
 
