@@ -676,7 +676,7 @@ Type \`help\` for help
                \u2502
 \u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
 \u2502                              \u2502
-\u2502     multiformats (dag-pb)    \u2502
+\u2502        ipld (dag-pb)         \u2502
 \u2502                              \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
                \u2502
@@ -778,6 +778,7 @@ Type \`help\` for help
 * ESM/TypeScript
 * Web-first
 * Smaller API (decoupled from Kubo / JS "Core API")
+* What's in a name?
 
 ## \u{1F9EA} libp2p
 
@@ -798,6 +799,7 @@ Type \`help\` for help
 
 * unixfs - https://www.npmjs.com/package/ipfs-unixfs
 * multiformats - https://www.npmjs.com/package/multiformats
+* ipld - https://ipld.io/specs
 * bitswap - https://www.npmjs.com/package/ipfs-bitswap
 * libp2p - https://www.npmjs.com/package/libp2p
 * blockstore - https://www.npmjs.com/package/interface-blockstore
