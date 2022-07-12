@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "vite build public --out-dir ../dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite public"
+    "prepublish": "npm run clean && npm run build -- --base /ipfs-althing-talk ",
+    "start": "vite public",
+    "deploy": "npm run prepublish && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "vite": "^2.9.14"
   }
 }

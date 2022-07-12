@@ -32,7 +32,9 @@ export default {
 
     const file = await unified()
       .use(remarkParse)
-      .use(remarkRehype, {allowDangerousHtml: true})
+      .use(remarkRehype, {
+        allowDangerousHtml: true
+      })
       .use(rehypeRaw)
       .use(rehypeSanitize)
       .use(rehypeStringify)
