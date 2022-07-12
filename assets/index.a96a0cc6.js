@@ -682,11 +682,13 @@ Type \`help\` for help
 * That'd be me \u{1F44B}
   * Quick meetings \u2705
   * Strong alignment \u{1F44D}
+  * We're hiring! \u{1F9D1}\u200D\u{1F4BC}
 
 * Alumni
   * Alan Shaw
   * David Dias
   * Hugo Dias
+  * Irakli Gozalishvili
   * Jacob Heun
   * Vasco Santos
   * ..etc
@@ -697,6 +699,7 @@ Type \`help\` for help
 <img src="https://raw.githubusercontent.com/achingbrain/ipfs-althing-talk/master/public/slides/growth.png" alt="js-ipfs growth" height="400" />
 
 * People using js-IPFS or parts of it in their stacks:
+  * tbd
   * OrbitDB
   * 3Box
   * Anchor
