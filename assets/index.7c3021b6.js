@@ -792,11 +792,11 @@ Type \`help\` for help
 
 ## \u{1F5FA}\uFE0F Choose your own adventure
 
-* unixfs
-* bitswap
-* libp2p
-* multiformats
-* blockstore
+* unixfs - https://www.npmjs.com/package/ipfs-unixfs
+* multiformats - https://www.npmjs.com/package/multiformats
+* bitswap - https://www.npmjs.com/package/ipfs-bitswap
+* libp2p - https://www.npmjs.com/package/libp2p
+* blockstore - https://www.npmjs.com/package/interface-blockstore
 `,Zh=`# \u{1F914} Questions?
 
 <img src="https://js.ipfs.io/static/cube-5a125bc68b1f819d3976b2f4a04cf821.svg" alt="js-ipfs logo" width="200" />
